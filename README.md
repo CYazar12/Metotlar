@@ -42,25 +42,22 @@ ornek.EkranaYazdir(Convert.ToString(a+b)); //Console.WriteLine(a+b) de diyebilir
 
  int sonuc2 = ornek.ArttirVeTopla(ref a, ref b); 
  ornek.EkranaYazdir(Convert.ToString(sonuc2));//Burda a ve b global degerini 1 artirip topluyoruz  Cikti :7
- ornek.EkranaYazdir(Convert.ToString(a+b));// burda deger1 ve deger2 üzerinden a ve b nin degerini degistirip topluyor.Cikti :7 
- }
+ ornek.EkranaYazdir(Convert.ToString(a+b));}// burda deger1 ve deger2 üzerinden a ve b nin degerini degistirip topluyor.Cikti :7 
 
 static int Topla (int deger1, int deger2){ // Yukardaki toplama isleminin aynisini bir metot ile yapmak istiyoruz. Ayni class icerisinde Topla adinda bir metot //yazdik.burda static demek zorundayiz,cünkü yukardaki Main metot static ve static bir metod icinde ancak static metodlara erisilebilir.
  
- return(deger1 +deger2);      // a ve b degiskenlerine deger1 ve deger2 olarak farkli isimler verdik.
- }
-}
+ return(deger1 +deger2);  }}  // a ve b degiskenlerine deger1 ve deger2 olarak farkli isimler verdik.
+ 
 // ikicinci metotumuzu mevcut class in icinde degil baska bir class in icinde yapmak istiyoruz beklentimiz ise Console.WriteLine lari bir metot a yazdimak.
 
 class Metotlar
 { 
- public void EkranaYazdir(string veri);  //geriye bir veri dönmüyor sadece yazma islemi yapiyor dolayisiyla void olacak
-{
+ public void EkranaYazdir(string veri);{  //geriye bir veri dönmüyor sadece yazma islemi yapiyor dolayisiyla void olacak
 Console.WriteLine(veri);} // burda farkli classda oldugumuz icin classimizin bir instance yani bir örnegini yukarda olusturmamaiz lazim olusturdugumuz instance(örnek)                          //class ile metotda ulasmayi deniycez.
                         // olusturdugumuz class in instance na erisebilmek icin public yazmak zorundayiz
 // *****Call by Reference 
 
- public int ArttirVeTopla(int deger1, int deger2) // digiskenin lokal olarak degistirmek {
+ public int ArttirVeTopla(int deger1, int deger2){ // digiskenin lokal olarak degistirmek 
 deger1+=1;
 deger2+=1;
 return deger1+deger2;//Normalde ben bu degere fonksiyon icinde ulasabilirim,
@@ -68,7 +65,5 @@ return deger1+deger2;//Normalde ben bu degere fonksiyon icinde ulasabilirim,
 public int ArttirVeTopla( ref int deger1,ref int deger2){ // degiskenin global olarak degistirmek 
    deger1+=1;
    deger2+=1;
-   return deger1+deger2;            //Normalde ben bu degere fonksiyon icinde ulasabilirim,
-}
-}
+   return deger1+deger2;}}            //Normalde ben bu degere fonksiyon icinde ulasabilirim,
 ```
