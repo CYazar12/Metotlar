@@ -36,7 +36,8 @@ ornek.EkranaYazdir(Convert.ToString(sonuc));  //EkranaYazdir metotu string tipin
 
 int sonuc2 = ornek.ArttirVeTopla(a,b); 
 ornek.EkranaYazdir(Convert.ToString(sonuc2)) //a ve b nin lokal degerlerini 1 artttirip topladigimizda Cikti:7
-ornek.EkranaYazdir(Convert.ToString(a+b)); //Console.WriteLine(a+b) de diyebiliriz // a ve b nin lokal degerlerini artirmadan önce topladigimizda Cikti:5
+ornek.EkranaYazdir(Convert.ToString(a+b)); //Console.WriteLine(a+b) de diyebiliriz
+                                          // a ve b nin lokal degerlerini artirmadan önce topladigimizda Cikti:5
 
 // Yukarda a ve b nin degerlerini global olarak fonksiyon disinda da o deger üzerinden islem görmesi icin ref i kullanacagiz.
 
@@ -53,7 +54,8 @@ static int Topla (int deger1, int deger2){ // Yukardaki toplama isleminin aynisi
 class Metotlar
 { 
  public void EkranaYazdir(string veri);{  //geriye bir veri dönmüyor sadece yazma islemi yapiyor dolayisiyla void olacak
-Console.WriteLine(veri);} // burda farkli classda oldugumuz icin classimizin bir instance yani bir örnegini yukarda olusturmamaiz lazim olusturdugumuz instance(örnek)                          //class ile metotda  erisebilmek icin public yazmak zorundayiz
+Console.WriteLine(veri);} // burda farkli classda oldugumuz icin classimizin bir instance yani bir örnegini yukarda olusturmamaiz 
+                          //  lazim olusturdugumuz instance(örnek) class ile metotda  erisebilmek icin public yazmak zorundayiz
 // *****Call by Reference 
 
  public int ArttirVeTopla(int deger1, int deger2){ // digiskenin lokal olarak degistirmek 
