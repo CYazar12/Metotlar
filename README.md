@@ -45,7 +45,9 @@ ornek.EkranaYazdir(Convert.ToString(a+b)); //Console.WriteLine(a+b) de diyebilir
  ornek.EkranaYazdir(Convert.ToString(sonuc2));//Burda a ve b global degerini 1 artirip topluyoruz  Cikti :7
  ornek.EkranaYazdir(Convert.ToString(a+b));}// burda deger1 ve deger2 üzerinden a ve b nin degerini degistirip topluyor.Cikti :7 
 
-static int Topla (int deger1, int deger2){ // Yukardaki toplama isleminin aynisini bir metot ile yapmak istiyoruz. Ayni class icerisinde Topla adinda bir metot //yazdik.burda static demek zorundayiz,cünkü yukardaki Main metot static ve static bir metod icinde ancak static metodlara erisilebilir.
+static int Topla (int deger1, int deger2){ // Yukardaki toplama isleminin aynisini bir metot ile yapmak istiyoruz.
+// Ayni class icerisinde Topla adinda bir metot yazdik.burda static demek zorundayiz,cünkü yukardaki Main metot static ve 
+// static bir metod icinde ancak static metodlara erisilebilir.
  
  return(deger1 +deger2);  }}  // a ve b degiskenlerine deger1 ve deger2 olarak farkli isimler verdik.
  
