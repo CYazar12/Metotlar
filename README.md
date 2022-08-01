@@ -53,17 +53,16 @@ static int Topla (int deger1, int deger2){ // Yukardaki toplama isleminin aynisi
 class Metotlar
 { 
  public void EkranaYazdir(string veri);{  //geriye bir veri dönmüyor sadece yazma islemi yapiyor dolayisiyla void olacak
-Console.WriteLine(veri);} // burda farkli classda oldugumuz icin classimizin bir instance yani bir örnegini yukarda olusturmamaiz lazim olusturdugumuz instance(örnek)                          //class ile metotda ulasmayi deniycez.
-                        // olusturdugumuz class in instance na erisebilmek icin public yazmak zorundayiz
+Console.WriteLine(veri);} // burda farkli classda oldugumuz icin classimizin bir instance yani bir örnegini yukarda olusturmamaiz lazim olusturdugumuz instance(örnek)                          //class ile metotda  erisebilmek icin public yazmak zorundayiz
 // *****Call by Reference 
 
  public int ArttirVeTopla(int deger1, int deger2){ // digiskenin lokal olarak degistirmek 
 deger1+=1;
 deger2+=1;
-return deger1+deger2;//Normalde ben bu degere fonksiyon icinde ulasabilirim,
+return deger1+deger2;//Normalde bu degere fonksiyon icinde lokal ulasabiliriz
 
-public int ArttirVeTopla( ref int deger1,ref int deger2){ // degiskenin global olarak degistirmek 
+public int ArttirVeTopla( ref int deger1,ref int deger2){ // degiskenin global olarak degistirincee global erisebiliyoruz 
    deger1+=1;
    deger2+=1;
-   return deger1+deger2;}}            //Normalde ben bu degere fonksiyon icinde ulasabilirim,
+   return deger1+deger2;}}            
 ```
