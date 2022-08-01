@@ -1,0 +1,5 @@
+C:\Users\celal\Documents\Sites\Pratikler\Metotlar\obj\Debug\net6.0\Metotlar.csproj.AssemblyReference.cache
+C:\Users\celal\Documents\Sites\Pratikler\Metotlar\obj\Debug\net6.0\Metotlar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\celal\Documents\Sites\Pratikler\Metotlar\obj\Debug\net6.0\Metotlar.AssemblyInfoInputs.cache
+C:\Users\celal\Documents\Sites\Pratikler\Metotlar\obj\Debug\net6.0\Metotlar.AssemblyInfo.cs
+C:\Users\celal\Documents\Sites\Pratikler\Metotlar\obj\Debug\net6.0\Metotlar.csproj.CoreCompileInputs.cache
