@@ -1,11 +1,11 @@
 www.patika.dev
 # Metotlar
-Metot tanimlama dersi
-//Metodlar tek baslarina yazilabilen-cagirabiler yapilar degiller. Bir class icinde yazilmasi gerkli. erisimi(cagrilmasi) icinde mevcut bulundugu class icinden 
 
-direkt metod adiyla cagirabilidigi gibi  eger baska bir class icine yazilmis metodu cagirmak(erismek) istersek o class in öncelikle bir instance sini 
+Metodlar tek baslarina yazilabilen-cagirabiler yapilar degiller. Bir class icinde yazilmali ve yine erisimi(cagrilmasi)  mevcut bulundugu class icinden olmali.
 
-yani bir örnegini olusturmak gerekli, bu örnek üzerinden ancak o methoda ulasabiliriz.
+Metotlar direkt metod adiyla cagirabilidigi gibi  eger baska bir class icine yazilmis metodu cagirmak(erismek) istersek o classin öncelikle bir instancesini 
+
+yani bir örnegini olusturmak zorundayiz,o örnek üzerinden ancak o methoda ulasabiliriz.
 
 --------------------------------------
 
@@ -23,8 +23,8 @@ int a = 2;
 int b = 3;
 Console.WriteLine(a+b);
 .
- int sonuc =Topla(a,b) // toplama islemini yapiyor ,deger 1=a deger2=b //Call by Value islemi : dolayisiyla deger 1 ve deger 2 sadece fonksiyonun calisma süresice vardirlar, sadece fonksiyon icinde erisilebilirler.
- Console.WriteLine(sonuc);
+ int sonuc =Topla(a,b)          // toplama islemini yapiyor ,deger 1=a deger2=b //Call by Value islemi : dolayisiyla deger 1 ve deger 2 sadece fonksiyonun calisma                                       // süresice vardirlar, sadece fonksiyon icinde erisilebilirler.
+Console.WriteLine(sonuc);
  
 Metotlar ornek = new Metotlar();
 
@@ -32,20 +32,21 @@ ornek.EkranaYazdir(Convert.ToString(sonuc));  //bu EkranaYazdir metotu string ti
                                              // dolayisiyla test edemiyor.burda Convert.ToString diyip integeri stringe ceviriyoruz.
 
 //int sonuc2 = ornek.ArttirVeTopla(a,b); 
-//ornek.EkranaYazdir(Convert.ToString(sonuc2))//  a ve b nin lokal degerlerini 1 artttirip topladigimizda Cikti:7
-//ornek.EkranaYazdir(Convert.ToString(a+b)); // burda Console.WriteLine(a+b) de diyebiliriz // a ve b nin lokal degerlerini artirmadan önce topladigimizda Cikti:5
+//ornek.EkranaYazdir(Convert.ToString(sonuc2)) //  a ve b nin lokal degerlerini 1 artttirip topladigimizda Cikti:7
+//ornek.EkranaYazdir(Convert.ToString(a+b));  // burda Console.WriteLine(a+b) de diyebiliriz // a ve b nin lokal degerlerini artirmadan önce topladigimizda Cikti:5
 
 // Yukarda a ve b nin degerlerini global olarak fonksiyon disinda da o deger üzerinden islem görmesi icin ref i kullanacagiz.
+
  int sonuc2 = ornek.ArttirVeTopla(ref a, ref b); 
- ornek.EkranaYazdir(Convert.ToString(sonuc2));// Burda a ve b global degerini 1 artirip topluyoruz  Cikti :7
- ornek.EkranaYazdir(Convert.ToString(a+b));//    burda deger1 ve deger2 üzerinden a ve b nin degerini degistirip topluyor.Cikti :7 
+ ornek.EkranaYazdir(Convert.ToString(sonuc2));      // Burda a ve b global degerini 1 artirip topluyoruz  Cikti :7
+ ornek.EkranaYazdir(Convert.ToString(a+b));        // burda deger1 ve deger2 üzerinden a ve b nin degerini degistirip topluyor.Cikti :7 
  }
   
 Yukardaki toplama isleminin aynisini bir metot ile yapmak istiyoruz. Ayni class icerisinde Topla diye bir metot yaptik static demek zorundayiz,cünkü yukardaki Main metot static bir metod ve static bir metod icinde ancak static metodlara erisilebilir.
  
  static int Topla (int deger1, int deger2
  {
- return(deger1 +deger2); // a ve b degiskenlerine deger1 ve deger2 olarak farkli isimler verdik.
+ return(deger1 +deger2);           // a ve b degiskenlerine deger1 ve deger2 olarak farkli isimler verdik.
  }
 }
 
