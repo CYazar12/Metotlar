@@ -1,0 +1,2 @@
+# Metotlar
+Metot tanimlama dersi
