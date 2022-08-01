@@ -15,7 +15,21 @@ yani bir örnegini olusturmak zorundayiz,o örnek üzerinden ancak o methoda ula
   komutlar
   
   return
+  
+ ---------------------------------------------------------------------------------------------------------
+  
+  
+namespace metot
 
+{
+   
+   internal class Program
+    
+    {
+        
+        static void Main(string[] args)
+        
+        {
 
    
 int a = 2;
