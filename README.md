@@ -12,7 +12,7 @@ yani bir örnegini olusturmak zorundayiz,o örnek üzerinden ancak o methoda ula
  Syntax: erisim_belirteci geri_donustipi metot_adi(parametreListesi/arguman) {
                                                                 komutlar
                                                                 return
-namespace metotlar
+'''namespace metotlar
 {
  class Program
  {
@@ -28,8 +28,9 @@ Console.WriteLine(sonuc);
  
 Metotlar ornek = new Metotlar();
 
-ornek.EkranaYazdir(Convert.ToString(sonuc));  //bu EkranaYazdir metotu string tipinde bir veritipi bekliyor parameter olarak ama sonuc integer tipinde bir veri tipi
-                                             // dolayisiyla test edemiyor.burda Convert.ToString diyip integeri stringe ceviriyoruz.
+ornek.EkranaYazdir(Convert.ToString(sonuc));''''
+bu EkranaYazdir metotu string tipinde bir veritipi bekliyor parameter olarak ama sonuc integer tipinde bir veri tipi
+dolayisiyla test edemiyor.burda Convert.ToString diyip integeri stringe ceviriyoruz.
 
 //int sonuc2 = ornek.ArttirVeTopla(a,b); 
 //ornek.EkranaYazdir(Convert.ToString(sonuc2)) //  a ve b nin lokal degerlerini 1 artttirip topladigimizda Cikti:7
