@@ -28,7 +28,8 @@ Metotlar direkt metod adiyla cagirabilidigi gibi eger baska bir class icine yazi
 Console.WriteLine(a+b);
 int sonuc =Topla(a,b) 
 // Metot Topla toplama islemini yapiyor ,deger 1=a deger2=b 
-//Call by Value islemi : dolayisiyla deger 1 ve deger 2 sadece fonksiyonun calisma süresice varlar, sadece fonksiyon icinde erisilebilirler.
+//Call by Value islemi : 
+//dolayisiyla deger 1 ve deger 2 sadece fonksiyonun calisma süresice varlar, sadece fonksiyon icinde erisilebilirler.
  Console.WriteLine(sonuc);
 Metotlar ornek = new Metotlar();
 ornek.EkranaYazdir(Convert.ToString(sonuc));
